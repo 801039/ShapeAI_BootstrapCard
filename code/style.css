@@ -1,0 +1,13 @@
+body{
+    background-color: #fff9d4;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.card{
+    background-color: rgb(235, 206, 111);
+}
+
+.card-body{
+    color: black;
+}
