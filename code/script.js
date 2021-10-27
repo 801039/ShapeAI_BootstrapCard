@@ -1,5 +1,7 @@
 const taskContainer = document.querySelector(".task_container");
 
+const globalStore = [];
+
 const generateNewCard = (taskData) => `
 <div class="col-md-6 col-lg-4" id=${taskData.id}>
                 <div class="card">
