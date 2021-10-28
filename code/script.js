@@ -25,10 +25,22 @@ const generateNewCard = (taskData) => `
 
 const loadInitialCardData = () => {
     //local storage to get tasky card data
+    const getCardData =localStorage.getItem("tasky");
 
     //convert to nomal object
+    const {cards} = JSON.parse(getCardData);
 
     //loop over those array of task object to create HTML card, inject it to DOM
+    cards.map((cardObject) => {
+        taskContainer.insertAdjacentHTML("beforeend", generateNewCard(cardObject));
+
+    //update our global store
+        globalStore.push(cardObject);
+    });
+
+
+
+
 };
 
 const saveChanges = () => {
