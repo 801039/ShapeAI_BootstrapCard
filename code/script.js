@@ -23,6 +23,14 @@ const generateNewCard = (taskData) => `
             </div>
 `;
 
+const loadInitialCardData = () => {
+    //local storage to get tasky card data
+
+    //convert to nomal object
+
+    //loop over those array of task object to create HTML card, inject it to DOM
+};
+
 const saveChanges = () => {
     const taskData = {
         id: `${Date.now()}`,//unique num for id
@@ -33,5 +41,9 @@ const saveChanges = () => {
     };
 
     taskContainer.insertAdjacentHTML("beforeend", generateNewCard(taskData));
+
+    globalStore.push(taskData);
+
+    localStorage.setItem("tasky", JSON.stringify({cards:globalStore}));
 
 } ;
