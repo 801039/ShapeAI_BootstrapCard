@@ -1,13 +1,18 @@
-body{
-    background-color: #fff9d4;
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Ubuntu Mono', monospace;
+body {
+  background-color: #fff9d4;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
 }
 
-.card{
-    background-color: rgb(235, 206, 111);
+.card {
+  background-color: rgb(235, 206, 111);
 }
 
-.card-body{
-    color: black;
+.card-body {
+  color: black;
+}
+
+.card {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
